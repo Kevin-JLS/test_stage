@@ -1,0 +1,16 @@
+{% block stylesheets %}
+     {{ encore_entry_link_tags('header') }}
+{% endblock %}
+
+{% block javascripts %}
+     {{ encore_entry_script_tags('header') }}
+{% endblock %}
+
+<header>
+     <nav id="nav">
+          <div class="nav-content">
+               <img class="logo-nav" src="{{ asset('images/logo-nav.svg') }}" alt="">
+               <span>SpaceBlog</span>
+          </div>
+     </nav>
+</header>

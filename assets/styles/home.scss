@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables */
+$orange: #DC5E44;
+$noir: #131313;
+$gris: #E4E6EC;
+$blanc: #FFFFFF;
+
+body {
+     font-family: 'Roboto', sans-serif;
+
+     main {
+
+          .img-top-home {
+               border-radius: 30px;
+               width: 100%;
+               height: 420px;
+          }
+     
+          .articles-container {
+               margin: 75px 0 85px;
+     
+               h2 {
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: $orange;
+               }
+     
+               .articles-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 40px;
+     
+                    .article-card {
+                         width: 400px;
+                         height: 418px;
+                         border-radius: 30px;
+                         overflow: hidden;
+     
+                         .top-card {
+                              width: 100%;
+                              height: 250px;
+     
+                              img {
+                                   width: 100%;
+                                   height: 100%;
+                                   background-position: center;
+                              }
+                         }
+     
+                         .bottom-card {
+                              padding: 30px;
+                              background: $blanc;
+                              height: 100%;
+                              
+                              h3 {
+                                   font-size: 32px;
+                                   padding: 0;
+                                   margin: 0;
+     
+                                   a {
+                                        color: $orange;
+                                        text-decoration: none;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}

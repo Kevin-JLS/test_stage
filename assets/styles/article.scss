@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* Variables */
+$orange: #DC5E44;
+$noir: #131313;
+$gris: #E4E6EC;
+$blanc: #FFFFFF;
+
+body {
+     font-family: 'Roboto', sans-serif;
+
+     main {
+     
+          .container-card-article {
+               border-radius: 30px;
+               overflow: hidden;
+               width: 100%;
+               margin-bottom: 85px;
+     
+               .top-card {
+                    width: 100%;
+                    height: 400px;
+
+                    img {
+                         width: 100%;
+                         height: 100%;
+                         background-position: center;
+                    }
+               }
+
+               .bottom-card-article {
+                    padding: 30px;
+                    background: $blanc;
+                    
+                    h2 {
+                         font-size: 32px;
+                         color: $orange;
+                         padding: 0;
+                         margin: 0;
+                         text-align: center;
+                    }
+
+                    .date_publication {
+                         padding: 0;
+                         margin: 0;
+                         font-style: italic;
+                         font-weight: 300;
+                    }
+               }
+          }
+     }
+}

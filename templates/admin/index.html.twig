@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+     {{ parent() }}
+     {{ encore_entry_link_tags('admin') }}
+{% endblock %}
+
+{% block javascripts %}
+     {{ parent() }}
+     {{ encore_entry_script_tags('admin') }}
+{% endblock %}
+
+{% block title %}Administration{% endblock %}
+
+{% block body %}
+
+     <main class="main-center">
+          <h1>Page d'administration</h1>
+
+          <a class="btn btn-orange" href="{{ path('admin_create') }}">Créer un article</a>
+
+          <table class="table-style">
+
+               <thead>
+                    <tr>
+                         <th>Article</th>
+                         <th>Actions</th>
+                    </tr>
+               </thead>
+          
+               <tbody>
+                    {% for article in articles %}
+                         <tr>
+                              <td><a class="link" href="{{ path('article_show', {slug: article.slug}) }}">{{ article.title }}</a></td>
+                              <td>
+                                   <a class="btn btn-modif" href="{{ path('admin_edit', {id: article.id}) }}">Modifier</a>
+                                   <a class="btn btn-delete" href="{{ path('admin_delete', {id: article.id}) }}">Supprimer</a>
+                              </td>
+                         </tr>
+                    {% endfor %}
+                    
+               </tbody>
+          </table>
+     </main>
+     
+{% endblock %}

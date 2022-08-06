@@ -1,0 +1,36 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+     {{ parent() }}
+     {{ encore_entry_link_tags('admin') }}
+{% endblock %}
+
+{% block javascripts %}
+     {{ parent() }}
+     {{ encore_entry_script_tags('admin') }}
+{% endblock %}
+
+{% block title %}Modifier {{ article.title }}{% endblock %}
+
+{% block body %}
+
+     <main class="main-center">
+
+          <h1>Modification de l'article : {{ article.title }} </h1>
+
+          <a class="btn btn-orange" href="{{ path('app_admin') }}">Retour à la liste des articles</a>
+
+          <div>
+               {{ form_start(form) }}
+                    {{ form_row(form.title) }}
+                    {{ form_row(form.content) }}
+                    {{ form_row(form.img) }}
+                    {{ form_row(form.submit) }}
+               {{ form_end(form) }}
+          </div>
+
+     </main>
+     
+     
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+     {{ parent() }}
+     {{ encore_entry_link_tags('home') }}
+{% endblock %}
+
+{% block javascripts %}
+     {{ parent() }}
+     {{ encore_entry_script_tags('home') }}
+{% endblock %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+     <main class="main-center">
+          <div class="img-top-home" style="background-image:url('{{ asset('images/home-header.svg') }}')"></div>
+
+          <div class="articles-container">
+               <h2>Nos articles</h2>
+
+               <div class="articles-list">
+                    {% for article in articles %}
+
+                         <div class="article-card">
+
+                              <div class="top-card">
+                                   <img class="img-article-home" src="{{asset('images/uploads/'~ article.picture) }}" alt="">
+                              </div>
+
+                              <div class="bottom-card">
+                                   <h3><a class="link" href="{{ path('article_show', {slug: article.slug}) }}">{{ article.title }}</a></h3>                  
+                              </div>
+
+                         </div>
+
+                    {% endfor %}
+               </div>
+               
+          </div>
+          
+     </main>
+
+{% endblock %}

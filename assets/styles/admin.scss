@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* Variables */
+$orange: #DC5E44;
+$noir: #131313;
+$gris: #E4E6EC;
+$blanc: #FFFFFF;
+
+body {
+     font-family: 'Roboto', sans-serif;
+
+     main {
+
+          h1 {
+               font-size: 48px;
+               color: $orange;
+          }
+
+          .table-style  {
+               border-collapse: collapse;
+               box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+               margin: 20px 0 50px;
+               border: 2px solid $orange;
+
+               thead tr {
+                    background-color: $orange;
+                    color: #fff;
+                    text-align: left;
+               }
+
+               thead th {
+                    font-size: 24px;
+               }
+
+               th, td {
+                    padding: 15px 20px;
+                    text-align: center;
+               }
+          
+               tbody tr, td, th {
+                    border: 1px solid #ddd;
+                    font-size: 20px;
+               }
+                    
+               tbody tr:nth-child(even){
+                    background-color: #f3f3f3;
+               }
+
+               tbody td a {
+                    text-decoration: none;
+                    color: $orange;
+               }
+
+               tbody .btn-modif {
+                    display: inline-block;
+                    padding: 20px 30px;
+                    color: $blanc;
+                    border-radius: 33px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    text-decoration: none;
+                    background: #333;
+               }
+
+               tbody .btn-delete {
+                    display: inline-block;
+                    padding: 20px 30px;
+                    color: $blanc;
+                    border-radius: 33px;
+                    margin: 0 10px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    text-decoration: none;
+                    background: crimson;
+               }
+          }                     
+     }
+}

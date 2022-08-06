@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+     {{ parent() }}
+     {{ encore_entry_link_tags('article') }}
+{% endblock %}
+
+{% block javascripts %}
+     {{ parent() }}
+     {{ encore_entry_script_tags('article') }}
+{% endblock %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block body %}
+     <main class="main-center">
+          <a class="btn btn-orange" href="{{ path('app_home') }}">Retour</a>
+
+          <div class="container-card-article">
+               <div class="top-card">
+                    <img class="img-article-home" src="{{asset('images/uploads/'~ article.picture) }}" alt="">
+               </div>
+               <div class="bottom-card-article">
+                    <h2>{{ article.title }}</h2>
+                    <p>{{ article.content }}</p>
+                    <p class="date_publication">Publié le </p>
+               </div>
+          </div>
+          
+     </main>
+     
+{% endblock %}
