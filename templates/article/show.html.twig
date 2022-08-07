@@ -23,7 +23,7 @@
                <div class="bottom-card-article">
                     <h2>{{ article.title }}</h2>
                     <p>{{ article.content }}</p>
-                    <p class="date_publication">Publié le </p>
+                    <p class="date_publication">Publié le {{ article.getDateCreated|date("d/m/Y à H:i") }}</p>
                </div>
           </div>
           

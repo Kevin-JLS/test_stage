@@ -49,6 +49,7 @@ class ArticlesType extends AbstractType
                             'image/gif',
                         ],
                         'mimeTypesMessage' => 'Veuillez sélectionner une image valide.',
+                        'uploadNoFileErrorMessage' => 'Veuillez choisir une image'
                     ])
                 ],
             ])
