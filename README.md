@@ -15,7 +15,7 @@ Lorsque vous avez téléchargé le dossier, rendez vous dans le projet avec votr
 - Installez les dépendences pour l'environnement PHP avec <b>composer install</b>. Dans le cas du message d'erreur avec openssl extension il faudra décommenter la ligne (extension=php_openssl.so) sous Linux et Mac et la ligne (extension=php_openssl.dll) sous Windows dans votre fichier php.ini. 
 - Installez les dépendences pour l'environnement JavaScript avec <b>npm install</b>.
 - Téléchargez Yarn avec la commande : <b>npm i -g yarn</b> puis buildez le tout avec la commande : <b>yarn encore dev</b>
-- Configurez votre base de données MySQL (id, mdp, dbname et version) puis créer la base de données avec <b>php bin/console doctrine:database:create</b>
+- Configurez votre base de données MySQL (id, mdp, dbname et version) puis créer la base de données avec <b>php bin/console doctrine:database:create</b> dans le fichier .env
 - Exécuter la commande : <b>php bin/console doctrine:migrations:migrate</b> afin de charger dans votre base de données les données nécessaire au bon fonctionnement de l'application.
 - Chargez les DataFixtures : <b>php bin/console doctrine:datafixtures:load</b>. 
 - Lancez un serveur local avec la commande : <b>symfony serve </b>. 
