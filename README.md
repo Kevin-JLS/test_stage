@@ -1,4 +1,4 @@
-<h1> 👋 Bonjour et bienvenue </h1>. 
+<h1> 👋 Bonjour et bienvenue </h1>
 
 Ce test a été réalisé avec la configuration suivante : 
 
@@ -24,5 +24,7 @@ Pour télécharger la CLI de Symfony : https://github.com/symfony-cli/symfony-cl
 <hr>
 
 ⚠️ La route /admin permet d'accéder au panel d'administration, ne la loupez pas !
+
+<hr>
 
 Kevin JOLLIS
